@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["sergio_jadir@outlook.com"]
   spec.summary       = %q{Nome próprio}
   spec.description   = %q{Transforma nome em qualquer formato como nome próprio.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/sergiojadir/nome_proprio"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,5 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", '~> 0'
+  spec.add_development_dependency "rspec", '~> 0'
+  spec.add_development_dependency 'rails', '~> 0'
+  spec.add_development_dependency 'debug_unimedrj', '~> 0'
 end
