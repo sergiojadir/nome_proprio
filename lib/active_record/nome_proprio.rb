@@ -6,7 +6,7 @@ module ActiveRecord
 			def nome_proprio(*args)
 				args.each do |method|
 					define_method "#{method}=" do |arg|
-						 gera_nome_proprio(arg)
+						super(arg=gera_nome_proprio(arg))
 					end
 				end
 			end
@@ -20,6 +20,5 @@ module ActiveRecord
 
 	class Base
 		include NomeProprio
-		warn "Nome proprio deprecated."
 	end
 end
