@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Sergio Jadir Ribeiro Leite"]
   spec.email         = ["sergio_jadir@outlook.com"]
   spec.summary       = %q{Nome próprio}
-  spec.description   = %q{Transforma nome em qualquer formato como nome próprio.}
+  spec.description   = %q{Gem para facilitar a gravação de atributos no formato de nome próprio.}
   spec.homepage      = "https://github.com/sergiojadir/nome_proprio"
   spec.license       = "MIT"
 
