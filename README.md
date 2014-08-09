@@ -1,6 +1,6 @@
 # NomeProprio
 
-TODO: Write a gem description
+Gem para facilitar a gravação de atributos no formato de nome próprio.
 
 ## Installation
 
@@ -18,7 +18,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+class User < ActiveRecord::Base
+
+	#add method nome_proprio in model
+	nome_proprio :nome, :sobrenome
+	
+end
+
+user = User.new
+
+user.first_name = "jonh"
+
+user.last_name = "doe"
+
+user.save!
+
+user = User.first
+
+user.first_name #-> "Jonh"
+
+user.last_name #-> "Doe"
 
 ## Contributing
 
