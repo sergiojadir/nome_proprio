@@ -20,7 +20,6 @@ Or install it yourself as:
 
 class User < ActiveRecord::Base
 
-	#add method nome_proprio in model
 	nome_proprio :nome, :sobrenome
 	
 end
