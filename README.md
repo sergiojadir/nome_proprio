@@ -26,17 +26,17 @@ end
 
 user = User.new
 
-user.first_name = "jonh"
+user.nome = "jonh"
 
-user.last_name = "doe"
+user.sobrenome = "doe"
 
 user.save!
 
 user = User.first
 
-user.first_name #-> "Jonh"
+user.nome #-> "Jonh"
 
-user.last_name #-> "Doe"
+user.sobrenome #-> "Doe"
 
 ## Contributing
 
