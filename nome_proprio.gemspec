@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-rails", "~> 3"
   spec.add_development_dependency "rails", "~> 4"
   spec.add_development_dependency "debug_unimedrj", "~> 0"
-  spec.add_dependency "activerecord", "~> 4"
+  spec.add_dependency "activerecord", ">= 4"
 end
